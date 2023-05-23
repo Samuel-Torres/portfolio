@@ -4,13 +4,9 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// components:
-import Navbar from './components/navBar/navBar';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Navbar />
       <App />
   </React.StrictMode>
 );
