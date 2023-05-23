@@ -3,25 +3,28 @@ import './App.scss';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // route components:
-import AboutMe from './routes/aboutMe/aboutMe';
-import Projects from './routes/projects/projects'
-import WorkHistory from './routes/workHistory/workHistory';
+import AboutMe from './routes/aboutMe/AboutMe';
+import Projects from './routes/projects/Projects'
+import WorkHistory from './routes/workHistory/WorkHistory';
 
 // components:
 import Navbar from './components/navBar/navBar';
 
+// Nav Bar data:
+import { navBarData } from './data/navBar';
+
 function App() {
+
   return (
       <div className='app_container'>
         <BrowserRouter>
-        <Navbar />
+        <Navbar navDataProps={navBarData} />
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/work-history" element={<WorkHistory />} />
           </Routes>
-        <h1>MAIN APP BODY</h1>
         </BrowserRouter>
       </div>
   );

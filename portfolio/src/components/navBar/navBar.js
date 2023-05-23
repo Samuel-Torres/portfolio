@@ -1,17 +1,23 @@
 import React from "react";
 import './navbar.scss';
 
-import { NavBarIconList } from './navBarIcons/navBarIconsList';
+import NavBarIconList from './NavBarIcons/NavBarIconsList';
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+    const data = props.navDataProps;
+
     return (
         <div className="container">
             <h1>NAV</h1>
             <div className="logoContainer">
-
+                <img 
+                    className="logoImg" 
+                    src={data.logoSourceUrl} 
+                    alt={props.alt} 
+                />
             </div>
             <div className="iconContainer">
-
+                <NavBarIconList navTabs={data.navigationTabs} />
             </div>
         </div>
     )
