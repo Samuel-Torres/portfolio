@@ -1,10 +1,17 @@
 import React from "react";
 import './navbar.scss';
 
+import { NavBarIconList } from './navBarIcons/navBarIconsList';
+
 export const Navbar = () => {
     return (
         <div className="container">
-            <h2>NAVBAR</h2>
+            <div className="logoContainer">
+
+            </div>
+            <div className="iconContainer">
+
+            </div>
         </div>
     )
 }
