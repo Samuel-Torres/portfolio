@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import './pageNavTab.scss';
 
 const PageNavTab = (props) => {
 
@@ -12,7 +13,7 @@ const PageNavTab = (props) => {
 
     return (
         <div onClick={() => handleNavTabClick(data.id)}>
-            <p>{data.projectName}</p>
+            <p className="projectName">{data.projectName}</p>
         </div>
     )
 }
