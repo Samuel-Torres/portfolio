@@ -12,6 +12,7 @@ import Navbar from './components/navBar/navBar';
 
 // Nav Bar data:
 import { navBarData } from './data/navBar';
+import { projects } from './data/projectData';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<Projects data={projects}/>} />
             <Route path="/work-history" element={<WorkHistory />} />
           </Routes>
         </BrowserRouter>

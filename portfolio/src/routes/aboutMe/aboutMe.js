@@ -1,8 +1,9 @@
 import React from "react";
+import './aboutMe.scss';
 
 export const aboutMe = () => {
     return (
-        <div>
+        <div className="aboutMe-Container">
             <h1>ABOUT ME</h1>
         </div>
     )
