@@ -12,7 +12,7 @@ const PageNavTab = (props) => {
 
     return (
         <div onClick={() => handleNavTabClick(data.id)}>
-            <p>{data.textLabel}</p>
+            <p>{data.projectName}</p>
         </div>
     )
 }
