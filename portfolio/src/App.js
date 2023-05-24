@@ -17,19 +17,23 @@ import { projects } from './data/projectData';
 function App() {
 
   return (
-    <div className='app_container'>
-      {/* <div className='border-gradient'>
-      </div> */}
-        <BrowserRouter>
-        <Navbar navDataProps={navBarData} />
-          <Routes>
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/about-me" element={<AboutMe />} />
-            <Route path="/projects/:id" element={<ProjectPage data={projects}/>} />
-            <Route path="/work-history" element={<WorkHistory />} />
-          </Routes>
-        </BrowserRouter>
+    <>
+      <div className='border-gradient border-gradient-green only-top'>
       </div>
+      <div className='app_container'>
+        {/* <div className='border-gradient'>
+        </div> */}
+          <BrowserRouter>
+          <Navbar navDataProps={navBarData} />
+            <Routes>
+              <Route path="/" element={<AboutMe />} />
+              <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/projects/:id" element={<ProjectPage data={projects}/>} />
+              <Route path="/work-history" element={<WorkHistory />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+    </>
   );
 }
 
