@@ -15,19 +15,19 @@ export const NavBarIcon = (props) => {
     return (
         <div className="navBarIconContainer">
             {tabData.tabType === "pageUrl" ? 
-                <div onClick={() => handleTabClick(tabData.path)}>
+                <div className="iconItem" onClick={() => handleTabClick(tabData.path)}>
                     <img className="tabImg" src={tabData.imgIcon} alt={tabData.alt} />
                     <p>{tabData.tabText}</p>
                 </div> 
             : null}
 
             {tabData.tabType === "externalLink" ? 
-                <div>
-                    <a className="tabAClass" href={tabData.destination} rel="noreferrer noopener" target="_blank">
-                        <img className="tabImg" src={tabData.imgIcon} alt="github icon" />
-                        {tabData.tabText}
-                    </a>
-                </div> 
+                <a className="tabAClass" href={tabData.destination} rel="noreferrer noopener" target="_blank">
+                    <div className="iconItem">
+                    <img className="tabImg" src={tabData.imgIcon} alt="github icon" />
+                    {tabData.tabText}
+                    </div> 
+                </a>
             : null}
         </div>
     )

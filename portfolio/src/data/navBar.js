@@ -1,5 +1,5 @@
 export const navBarData = {
-    logoSourceUrl: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1669496648/portfolio/index%20page/P5_otnj8e.png',
+    logoSourceUrl: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1684886062/portfolio/nav%20icons/P5_copy_hq43bn.png',
     alt: 'Sam Torres logo',
     navigationTabs: [
         {

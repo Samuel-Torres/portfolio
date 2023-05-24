@@ -8,7 +8,6 @@ export const Navbar = (props) => {
 
     return (
         <div className="container">
-            <h1>NAV</h1>
             <div className="logoContainer">
                 <img 
                     className="logoImg" 
