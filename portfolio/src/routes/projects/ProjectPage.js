@@ -13,15 +13,21 @@ export const ProjectPage = (props) => {
     }, [params, data]);
 
     return (
-        <div className="projectPageContainer">
-            <div className="projectContainer">
-                <h1>{currentProject.projectName}</h1>
-            </div>
-            <div className="pageNavContainer">
-                <h2>Projects</h2>
-                <PageNav data={data} />
-            </div>
-        </div>
+        <>
+            {
+                !currentProject ? <h1>Loading...</h1> : 
+                
+                <div className="projectPageContainer">
+                    <div className="projectContainer">
+                        <h1>{currentProject.projectName}</h1>
+                    </div>
+                    <div className="pageNavContainer">
+                        <h2>Projects</h2>
+                        <PageNav data={data} />
+                    </div>
+                </div>
+            }
+        </>
     )
 }
 

@@ -17,7 +17,9 @@ import { projects } from './data/projectData';
 function App() {
 
   return (
-      <div className='app_container'>
+    <div className='app_container'>
+      {/* <div className='border-gradient'>
+      </div> */}
         <BrowserRouter>
         <Navbar navDataProps={navBarData} />
           <Routes>
