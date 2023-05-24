@@ -40,12 +40,6 @@ export const aboutMe = {
     aboutMe: ""
 }
 
-export const Projects = [
-    {
-
-    }
-]
-
 export const workHistory = [
     {
 

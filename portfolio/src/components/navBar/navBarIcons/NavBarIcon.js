@@ -4,12 +4,13 @@ import './NavBarIcon.scss';
 
 export const NavBarIcon = (props) => {
     const tabData = props.tab
-    console.log("TAB: ", tabData ) 
+    // console.log("TAB: ", tabData ) 
     const navigate = useNavigate();
 
-    const handleTabClick = (location, e) => {
-        const newLocation = location.toLowerCase();
-        navigate(newLocation);
+    const handleTabClick = (path) => {
+        const newPath = path.toLowerCase();
+        if (path === "/about-me") return navigate(newPath);
+        navigate(`${newPath}/0`);
     }
 
     return (
