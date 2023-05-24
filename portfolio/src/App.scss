@@ -3,10 +3,35 @@
     height: calc(100vh);    
     width: 80%;
     margin: 0 auto;
+    padding: 15px;
 }
+// .border-gradient {
+//     position: absolute;
+//     // border-top: 10px solid black;
+//     // border-left: 10px solid linear-gradient(to bottom right, #ff0000, #00ff00);
+//     width: 30%;
+//     height: 50vh;
+//     margin-right: 40px;
+
+//     // border: 10px solid transparent;
+//     border-image: linear-gradient(to right, #FFC371, #FF5F6D) 1;
+//     // padding: 20px;
+// }
 .border-gradient {
-    position: absolute;
-    border: 10px solid black;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
     width: 30%;
-    height: 50vh;
-}
+    position: absolute;
+    height: 50%;
+    margin-left: 7%;
+    margin-top: 1%;
+  }
+  .border-gradient-green {
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+  }
+  .only-top {
+    // border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
