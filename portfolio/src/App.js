@@ -33,6 +33,8 @@ function App() {
             </Routes>
           </BrowserRouter>
         </div>
+        <div className='border-gradientTwo border-gradient-green only-bottom'>
+        </div>
     </>
   );
 }

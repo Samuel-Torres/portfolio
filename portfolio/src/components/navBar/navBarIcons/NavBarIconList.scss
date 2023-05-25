@@ -1,13 +1,11 @@
 .navBarIconContainer {
     color: white;
-    border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 
     .iconItem {
-        border: 2px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
