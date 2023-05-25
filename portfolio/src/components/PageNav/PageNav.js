@@ -1,4 +1,5 @@
 import React from "react";
+import './pageNav.scss'
 
 import PageNavList from "./PageNavList";
 

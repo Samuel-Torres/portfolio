@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.projectCardContainer {
+    background-color: $light-shade;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    
+    
+    .projectImg {
+        margin: 0 auto;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        top: -90px;
+        border-radius: 20px;
+        -webkit-box-shadow: -2px 20px 88px -42px rgba(0,0,0,0.56);
+        -moz-box-shadow: -2px 20px 88px -42px rgba(0,0,0,0.56);
+        box-shadow: -2px 20px 88px -42px rgba(0,0,0,0.56);
+    }
+    .projectCardDescContainer {
+        padding: 10px;
+        position: relative;
+        top: -80px;
+        word-wrap: break-word;
+    }
+    .projectBtnContainer {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: -70px;
+    }
+    .githubBtn {
+        transition: all 0.1s ease-in-out;
+    }
+    .githubBtn:hover {
+        transition-timing-function: ease-in;
+        transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
+    .liveAppBtn {
+        transition: all 0.1s ease-in-out;
+    }
+    .liveAppBtn:hover {
+        transition-timing-function: ease-in;
+        transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
+}
+.projectCardContainer p {
+    color: black;
+    text-align: left;
+}

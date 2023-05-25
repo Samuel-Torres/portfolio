@@ -1,37 +1,40 @@
 .app_container {
-    border: 5px solid blue;
-    height: calc(100vh);    
+    height: calc(100vh - 40px);    
     width: 80%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 25px 0px 0px 0px;
 }
-// .border-gradient {
-//     position: absolute;
-//     // border-top: 10px solid black;
-//     // border-left: 10px solid linear-gradient(to bottom right, #ff0000, #00ff00);
-//     width: 30%;
-//     height: 50vh;
-//     margin-right: 40px;
 
-//     // border: 10px solid transparent;
-//     border-image: linear-gradient(to right, #FFC371, #FF5F6D) 1;
-//     // padding: 20px;
-// }
 .border-gradient {
     border: 10px solid;
     border-image-slice: 1;
     border-width: 5px;
-    width: 30%;
+    width: 20%;
     position: absolute;
-    height: 50%;
+    height: 30%;
     margin-left: 7%;
     margin-top: 1%;
+}
+.border-gradientTwo {
+      border: 10px solid;
+      border-image-slice: 1;
+      border-width: 5px;
+      width: 20%;
+      position: absolute;
+      height: 30%;
+      margin-left: 7%;
+      margin-top: 1%;
+      bottom: 3%;
+      right: 7%;
   }
   .border-gradient-green {
     border-image-source: linear-gradient(to left, #00C853, #B2FF59);
   }
   .only-top {
-    // border-left: 0;
     border-right: 0;
     border-bottom: 0;
+  }
+  .only-bottom {
+    border-left: 0;
+    border-top: 0;
   }

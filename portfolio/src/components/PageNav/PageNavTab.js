@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import './pageNavTab.scss';
+import "./pageNavTab.scss";
 
 const PageNavTab = (props) => {
 
