@@ -6,3 +6,16 @@ $dark-shade: #222223;
 $success: #5ea25d;
 $warning: #db9225;
 $danger: #f44336;
+
+
+// DELETE THESE
+
+/* gradients */
+$gradient: rgb(157,0,255);
+$opacGradient: rgba(157,0,255, .2);
+$gradientBackground: linear-gradient(to left, #9d00ff, #9600a2, #71005a, #3e0527, #000000);
+
+// Media Queries:
+$miniAndUp: 300px;
+$mobileAndUp: 400px;
+$tabletAndUp: 850px;

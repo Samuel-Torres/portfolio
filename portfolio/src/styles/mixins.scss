@@ -1,0 +1,19 @@
+@import '../styles/variables.scss';
+
+@mixin text-gradient() {
+    background: -webkit-linear-gradient(#000000, $light-shade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@mixin border-gradient($border-width) {
+    border-width: $border-width;
+    border-style: solid;
+    border-image: linear-gradient(to right, #000000, $light-shade) 1;
+}
+
+@mixin dropShadow($color) {
+    -webkit-box-shadow: 5px 7px 15px -8px $color; 
+    box-shadow: 5px 7px 15px -8px $color;
+}
