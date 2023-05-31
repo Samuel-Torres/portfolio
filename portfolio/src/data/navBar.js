@@ -30,7 +30,7 @@ export const navBarData = {
             id:3,
             tabType: 'externalLink',
             tabText: 'GitHub',
-            destination: "https://github.com/Samuel-Torres/portfolio/tree/main/portfolio",
+            destination: "https://github.com/Samuel-Torres",
             imgIcon: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1684876665/portfolio/nav%20icons/github_1_p7dg6h.png'
         }
     ]

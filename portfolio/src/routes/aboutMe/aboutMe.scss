@@ -1,3 +1,16 @@
 .aboutMe-Container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 190px);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding:  15px;
+
+    .bioContainer {
+        border: 2px solid red;
+        height: 100%;
+        margin: 10px;
+    }
+    .bioContainer p {
+        color: white;
+    }
 }
