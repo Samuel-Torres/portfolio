@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    background-color: $dark-accent;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+
+    .textInput {
+        all: unset; 
+        margin-bottom: 2rem;
+        height: 1.5rem;
+        color: black;
+        font-size: 1.2rem;
+        @include border-gradient(2px);
+        background-color: $light-shade;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: white !important;
+    }
+    .textInput::placeholder{
+        color: black;
+        opacity: .5;
+    }
+    .textAreaInput {
+        all: unset; 
+        margin-bottom: 2rem;
+        height: 8rem;
+        font-size: 1.2rem;
+        resize: none;
+        overflow-wrap: break-word;
+        background-color: $light-shade;
+        @include border-gradient(2px);
+        padding: 0;
+    }
+    .textAreaInput::placeholder{
+        color: black;
+        opacity: .5;
+    }
+    button {
+        all: unset;
+        margin: 2rem auto;
+        padding: 1rem 1rem;
+        width: 100px;
+        text-align: center;
+        transition: all 0.1s ease-in-out;
+        font-size: medium;
+        color: $light-shade;
+        border: 4px solid $light-shade;
+    }
+    button:hover{
+        cursor: pointer;
+        transition-timing-function: ease-in;
+        transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transform: translateY(-3px);
+    }
+}
