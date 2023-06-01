@@ -79,8 +79,8 @@ export default function ContactForm() {
     if(wasSubmitted === false && isSuccessful === false){
         return <>
             <form 
-                    className="formContainer" 
-                    onSubmit={handleSubmit} 
+                className="formContainer" 
+                onSubmit={handleSubmit} 
                 >
                     {error.from_email.length > 0 ? (
                         <p className="error">{error.from_email}</p>
