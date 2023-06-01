@@ -51,12 +51,20 @@
         padding: 1rem 1rem;
         width: 100px;
         text-align: center;
-        transition: all 0.1s ease-in-out;
         font-size: medium;
         color: $light-shade;
         border: 4px solid $light-shade;
     }
-    button:hover{
+    .error {
+        color: $danger;
+    }
+    .disabled-btn {
+        opacity: .5;
+    }
+    .enabled-btn {
+        transition: all 0.1s ease-in-out;
+    }
+    .enabled-btn:hover {
         cursor: pointer;
         transition-timing-function: ease-in;
         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);

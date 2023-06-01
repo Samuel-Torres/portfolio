@@ -9,8 +9,8 @@ export const NavBarIcon = (props) => {
 
     const handleTabClick = (path) => {
         const newPath = path.toLowerCase();
-        if (path === "/about-me" || "/contact") return navigate(newPath);
-        navigate(`${newPath}/0`);
+        if (newPath === "/about-me" || newPath === "/contact") return navigate(newPath);
+        else navigate(`${newPath}/0`);
     }
 
     return (
