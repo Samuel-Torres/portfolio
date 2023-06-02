@@ -4,7 +4,6 @@ import './NavBarIcon.scss';
 
 export const NavBarIcon = (props) => {
     const tabData = props.tab
-    // console.log("TAB: ", tabData ) 
     const navigate = useNavigate();
 
     const handleTabClick = (path) => {
@@ -29,6 +28,14 @@ export const NavBarIcon = (props) => {
                     {tabData.tabText}
                     </div> 
                 </a>
+            : null}
+
+            {tabData.type === "resume" ? 
+                <a href={require("../../../assets/SamuelTorres-Resume.pdf")} download="SamuelTorres-Resume">
+                <button className="resume-btn">
+                    Download Resume
+                </button>
+            </a>
             : null}
         </div>
     )

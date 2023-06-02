@@ -1,3 +1,5 @@
+@import "./styles/variables.scss";
+
 .app_container {
     height: calc(100vh - 40px);    
     width: 80%;
@@ -27,8 +29,11 @@
       bottom: 3%;
       right: 7%;
   }
-  .border-gradient-green {
-    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+  .border-gradient-green-top {
+    border-image-source: linear-gradient(to left, $dark-shade, $light-shade);
+  }
+  .border-gradient-green-bottom {
+    border-image-source: linear-gradient(to bottom, $dark-shade, $light-shade);
   }
   .only-top {
     border-right: 0;

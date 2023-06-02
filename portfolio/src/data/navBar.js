@@ -27,6 +27,14 @@ export const navBarData = {
             alt: 'work history icon'
         },
         {
+            id: 4,
+            tabType: 'pageUrl',
+            tabText: 'Contact Me',
+            imgIcon: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1685563558/portfolio/nav%20icons/email_1_dgudu9.png',
+            path: "/contact",
+            alt: 'contact icon'
+        },
+        {
             id:3,
             tabType: 'externalLink',
             tabText: 'GitHub',
@@ -35,11 +43,7 @@ export const navBarData = {
         },
         {
             id: 4,
-            tabType: 'pageUrl',
-            tabText: 'Contact Me',
-            imgIcon: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1685563558/portfolio/nav%20icons/email_1_dgudu9.png',
-            path: "/contact",
-            alt: 'contact icon'
+            type: "resume"
         }
     ]
 }
