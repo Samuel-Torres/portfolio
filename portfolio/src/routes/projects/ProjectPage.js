@@ -10,7 +10,7 @@ export const ProjectPage = (props) => {
     const [ currentProject, setCurrentProject ] = useState();
     const data = props.data;
     const params = useParams();
-    
+
     useEffect(() => {
         setCurrentProject(data[params.id])
     }, [params, data]);

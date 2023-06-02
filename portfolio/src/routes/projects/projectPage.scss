@@ -1,5 +1,9 @@
+@import "../../styles/mixins.scss";
+
 .projectPageContainer {
     display: flex;
+    @include pageTransition(1s);
+
     .projectContainer {
         width: 70%;
         height: calc(100vh - 155px);

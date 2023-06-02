@@ -1,0 +1,8 @@
+@import "../../styles//mixins.scss";
+
+.workHistoryContainer {
+    height: 100vh;
+    width: 100vw;
+    border: 3px solid red;
+    @include pageTransition(1s);
+}

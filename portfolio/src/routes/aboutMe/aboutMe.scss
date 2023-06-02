@@ -5,20 +5,7 @@
     display: flex;
     flex-direction: column;
     padding:  15px;
-    transition: 1s;
-    overflow: hidden;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-         }
-    }
+    @include pageTransition(1s);
 
     h1 {
         margin-bottom: 1rem;

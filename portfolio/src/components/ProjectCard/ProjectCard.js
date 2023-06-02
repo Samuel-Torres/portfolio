@@ -2,9 +2,8 @@ import React from "react";
 import './projectCard.scss';
 
 const ProjectCard = (props) => {
-
     const data = props.data
-    console.log("PROJECT DATA: ", data)
+
     return (
         <>
             {!data ? null : 
