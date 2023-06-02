@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import './aboutMe.scss';
 
-export const aboutMe = (props) => {
+export const AboutMe = (props) => {
+    const [position, setPosition] = useState(100);
     const data = props.data
-    console.log("BIO: ", data)
+    
+    // Fade-In Effect
+    const positionRef = useRef();
+    positionRef.current = position;
+    useEffect(() => {
+        const transition = setInterval(() => {
+          positionRef.current >= 0 
+            ? setPosition((positionRef.current = 0))
+            : clearInterval(transition);
+        }, 0);
+    }, []);
+
     return (
-        <div className="aboutMe-Container">
+        <div className="aboutMe-Container" style={{ transform: `translateX(${position}%)`, opacity: 1 }}>
             <div className="bioContainer">
             <h1 className="aboutMe">ABOUT ME</h1>
                 {!data ? <p>Loading...</p> :
@@ -16,4 +28,4 @@ export const aboutMe = (props) => {
     )
 }
 
-export default aboutMe;
+export default AboutMe;
