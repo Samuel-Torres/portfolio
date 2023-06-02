@@ -17,10 +17,9 @@ import { projects } from './data/projectData';
 import { aboutMe } from './data/about';
 
 function App() {
-  console.log("BIO: ", aboutMe)
   return (
     <>
-      <div className='border-gradient border-gradient-green only-top'>
+      <div className='border-gradient border-gradient-green-top only-top'>
       </div>
       <div className='app_container'>
           <BrowserRouter>
@@ -34,7 +33,7 @@ function App() {
             </Routes>
           </BrowserRouter>
         </div>
-        <div className='border-gradientTwo border-gradient-green only-bottom'>
+        <div className='border-gradientTwo border-gradient-green-bottom only-bottom'>
         </div>
     </>
   );
