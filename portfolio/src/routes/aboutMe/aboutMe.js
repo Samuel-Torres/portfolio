@@ -1,9 +1,9 @@
 import React from "react";
 import './aboutMe.scss';
 
-export const aboutMe = (props) => {
+export const AboutMe = (props) => {
     const data = props.data
-    console.log("BIO: ", data)
+
     return (
         <div className="aboutMe-Container">
             <div className="bioContainer">
@@ -16,4 +16,4 @@ export const aboutMe = (props) => {
     )
 }
 
-export default aboutMe;
+export default AboutMe;

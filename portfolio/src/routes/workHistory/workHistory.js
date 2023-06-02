@@ -1,11 +1,11 @@
 import React from "react";
 
-export const workHistory = () => {
+export const WorkHistory = () => {
     return (
-        <div>
+        <div className="workHistoryContainer">
             <h1>WORK HISTORY</h1>
         </div>
     )
 }
 
-export default workHistory;
+export default WorkHistory;
