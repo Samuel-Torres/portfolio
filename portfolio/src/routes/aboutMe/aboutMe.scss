@@ -3,7 +3,7 @@
 .aboutMe-Container {
     height: calc(100vh - 190px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding:  15px;
     @include pageTransition(1s);
 
@@ -26,14 +26,15 @@
     
     .skills-Container {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .skillsImg {
         width: 15%;
-        margin-bottom: 15px;
+        margin: 15px;
     }
 
     .img-Conatainer {

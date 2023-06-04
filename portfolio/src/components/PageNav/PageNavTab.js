@@ -13,9 +13,11 @@ const PageNavTab = (props) => {
     }
 
     return (
-        <div onClick={() => handleNavTabClick(data)}>
-            <p className="name">{data.name}</p>
-        </div>
+        <>
+            <div onClick={() => handleNavTabClick(data)}>
+                <p className="name">{data.name}</p>
+            </div>
+        </>
     )
 }
 

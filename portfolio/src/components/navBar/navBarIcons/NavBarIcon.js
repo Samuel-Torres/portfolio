@@ -13,7 +13,7 @@ export const NavBarIcon = (props) => {
     }
 
     return (
-        <div className="navBarIconContainer">
+        <div className="navIconContainer">
             {tabData.tabType === "pageUrl" ? 
                 <div className="iconItem" onClick={() => handleTabClick(tabData.path)}>
                     <img className="tabImg" src={tabData.imgIcon} alt={tabData.alt} />
@@ -24,18 +24,10 @@ export const NavBarIcon = (props) => {
             {tabData.tabType === "externalLink" ? 
                 <a className="tabAClass" href={tabData.destination} rel="noreferrer noopener" target="_blank">
                     <div className="iconItem">
-                    <img className="tabImg" src={tabData.imgIcon} alt="github icon" />
-                    {tabData.tabText}
+                        <img className="tabImg" src={tabData.imgIcon} alt="github icon" />
+                        {tabData.tabText}
                     </div> 
                 </a>
-            : null}
-
-            {tabData.type === "resume" ? 
-                <a href={require("../../../assets/SamuelTorres-Resume.pdf")} download="SamuelTorres-Resume">
-                <button className="resume-btn">
-                    Download Resume
-                </button>
-            </a>
             : null}
         </div>
     )

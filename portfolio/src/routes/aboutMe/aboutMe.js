@@ -7,10 +7,12 @@ export const AboutMe = (props) => {
     return (
         <div className="aboutMe-Container">
             <div className="bioContainer">
-            <h1 className="aboutMe">ABOUT ME</h1>
-                {!data ? <p>Loading...</p> :
-                    <p>{data.bio}</p>
-                }
+                <h1 className="aboutMe">ABOUT ME</h1>
+                    {!data ? <p>Loading...</p> :                  
+                            <p>{data.bio}</p>
+                    }
+            </div>
+            {!data ? <p>Loading...</p> :                  
                 <div className="skills-Container">
                     <h1 className="aboutMe">SKILLS</h1>
                     <div className="img-Conatainer">
@@ -19,7 +21,7 @@ export const AboutMe = (props) => {
                         })}
                     </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }
