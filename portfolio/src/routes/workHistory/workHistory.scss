@@ -1,8 +1,57 @@
 @import "../../styles//mixins.scss";
 
-.workHistoryContainer {
-    height: 100vh;
-    width: 100vw;
-    border: 3px solid red;
-    @include pageTransition(1s);
+.workHistoryPageContainer {
+    display: flex;
+
+    
+    .workHistoryContainer {
+        width: 70%;
+        height: calc(100vh - 190px);
+        @include pageTransition(1s);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .lambda {
+        width: 50%;
+    }
+    .upsie {
+        width: 20%;
+    }
+    .workHistoryContainer h1 {
+        margin-bottom: 15px;
+    }
+    .workHistoryContainer h2 {
+        margin-bottom: 10px;
+    }
+
+    .bulletContainer {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .bulletPoint {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+        
+    .pageNav-container {
+        width: 30%;
+    }
+
+    .pageNavContainer {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .pageNavContainer h2 {
+        margin-bottom: 15px;
+    }
 }

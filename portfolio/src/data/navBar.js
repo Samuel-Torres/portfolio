@@ -27,7 +27,7 @@ export const navBarData = {
             alt: 'work history icon'
         },
         {
-            id: 4,
+            id: 3,
             tabType: 'pageUrl',
             tabText: 'Contact Me',
             imgIcon: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1685563558/portfolio/nav%20icons/email_1_dgudu9.png',
@@ -35,14 +35,14 @@ export const navBarData = {
             alt: 'contact icon'
         },
         {
-            id:3,
+            id:4,
             tabType: 'externalLink',
             tabText: 'GitHub',
             destination: "https://github.com/Samuel-Torres",
             imgIcon: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1684876665/portfolio/nav%20icons/github_1_p7dg6h.png'
         },
         {
-            id: 4,
+            id: 5,
             type: "resume"
         }
     ]

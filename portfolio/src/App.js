@@ -15,6 +15,7 @@ import Navbar from './components/navBar/navBar';
 import { navBarData } from './data/navBar';
 import { projects } from './data/projectData';
 import { aboutMe } from './data/about';
+import { workHistory } from './data/workHistory';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
               <Route path="/" element={<AboutMe />} />
               <Route path="/about-me" element={<AboutMe data={aboutMe} />} />
               <Route path="/projects/:id" element={<ProjectPage data={projects}/>} />
-              <Route path="/work-history/:id" element={<WorkHistory />} />
+              <Route path="/work-history/:id" element={<WorkHistory data={workHistory}/>} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </BrowserRouter>
