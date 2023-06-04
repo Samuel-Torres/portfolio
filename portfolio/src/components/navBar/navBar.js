@@ -9,7 +9,6 @@ export const Navbar = (props) => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-        console.log("RAN")
         navigate("/about-me")
     }
 

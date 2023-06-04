@@ -3,7 +3,6 @@ import './aboutMe.scss';
 
 export const AboutMe = (props) => {
     const data = props.data
-    console.log("DATA: ", data);
     return (
         <div className="aboutMe-Container">
             <div className="bioContainer">
