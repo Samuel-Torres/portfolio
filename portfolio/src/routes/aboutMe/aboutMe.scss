@@ -21,7 +21,24 @@
 
     .bioContainer p {
         color: white;
-        font-size: 1.4rem;
         line-height: 1.5;
+    }
+    
+    .skills-Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skillsImg {
+        width: 15%;
+        margin-bottom: 15px;
+    }
+
+    .img-Conatainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }

@@ -7,13 +7,14 @@ const PageNavTab = (props) => {
     const data = props.data;
     const navigate = useNavigate();
 
-    const handleNavTabClick = (id) => {
-        navigate(`/projects/${id}`);
+    const handleNavTabClick = (data) => {
+        if(data.type === "project") return navigate(`/projects/${data.id}`);
+        if(data.type === "work-history") return  navigate(`/work-history/${data.id}`);
     }
 
     return (
-        <div onClick={() => handleNavTabClick(data.id)}>
-            <p className="projectName">{data.projectName}</p>
+        <div onClick={() => handleNavTabClick(data)}>
+            <p className="name">{data.name}</p>
         </div>
     )
 }

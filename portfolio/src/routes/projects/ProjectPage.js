@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import './projectPage.scss'
+import './projectPage.scss';
 import PageNav from "../../components/PageNav/PageNav";
 
 // components:
@@ -25,7 +25,7 @@ export const ProjectPage = (props) => {
                         <div className="projectCardParentContainer">
                             <ProjectCard data={currentProject} />
                         </div>
-                        <h1>{currentProject.projectName}</h1>
+                        <h1>{currentProject.name}</h1>
                     </div>
                     <div className="pageNavContainer">
                         <div className="pageNavWrapper">
