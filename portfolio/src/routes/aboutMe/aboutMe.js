@@ -9,16 +9,18 @@ export const AboutMe = (props) => {
             <div className="bioContainer">
             <h1 className="aboutMe">ABOUT ME</h1>
                 {!data ? <p>Loading...</p> :
-                    <p>{data.bio}</p>
-                }
-                <div className="skills-Container">
-                    <h1 className="aboutMe">SKILLS</h1>
-                    <div className="img-Conatainer">
-                        {data.techStackImgs.map(img => {
-                            return <img className="skillsImg" src={img.imgUrl} alt="iushiueqr" /> 
-                        })}
+                    <div>
+                        <p>{data.bio}</p>
+                        <div className="skills-Container">
+                            <h1 className="aboutMe">SKILLS</h1>
+                            <div className="img-Conatainer">
+                                {data.techStackImgs.map(img => {
+                                    return <img className="skillsImg" src={img.imgUrl} alt="iushiueqr" /> 
+                                })}
+                            </div>
+                        </div>
                     </div>
-                </div>
+                }
             </div>
         </div>
     )

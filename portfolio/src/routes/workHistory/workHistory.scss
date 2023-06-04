@@ -2,12 +2,12 @@
 
 .workHistoryPageContainer {
     display: flex;
+    @include pageTransition(1s);
 
     
     .workHistoryContainer {
         width: 70%;
         height: calc(100vh - 190px);
-        @include pageTransition(1s);
         display: flex;
         flex-direction: column;
         text-align: center;

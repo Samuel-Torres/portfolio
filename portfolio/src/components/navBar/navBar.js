@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import './navbar.scss';
 
 import NavBarIconList from './NavBarIcons/NavBarIconsList';
 
 export const Navbar = (props) => {
     const data = props.navDataProps;
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        return navigate("/about")
+    }
 
     return (
         <div className="container">
             <div className="logoContainer">
                 <img 
                     className="logoImg" 
+                    onClick={() => handleNavigate()}
                     src={data.logoSourceUrl} 
                     alt={props.alt} 
                 />

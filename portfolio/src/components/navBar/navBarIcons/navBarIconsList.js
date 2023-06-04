@@ -1,5 +1,4 @@
 import React from "react";
-import "./NavBarIconList.scss";
 
 import NavBarIcon from "./NavBarIcon";
 
