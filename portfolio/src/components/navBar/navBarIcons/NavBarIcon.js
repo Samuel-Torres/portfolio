@@ -29,14 +29,6 @@ export const NavBarIcon = (props) => {
                     </div> 
                 </a>
             : null}
-
-            {/* {tabData.type === "resume" ? 
-                <a className="downloadBtn" href={require("../../../assets/SamuelTorres-Resume.pdf")} download="SamuelTorres-Resume">
-                    <button className="resume-btn">
-                        Download Resume
-                    </button>
-                </a>
-            : null} */}
         </div>
     )
 }

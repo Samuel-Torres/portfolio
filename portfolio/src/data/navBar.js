@@ -40,11 +40,7 @@ export const navBarData = {
             tabText: 'GitHub',
             destination: "https://github.com/Samuel-Torres",
             imgIcon: 'https://res.cloudinary.com/dvz91qyth/image/upload/v1684876665/portfolio/nav%20icons/github_1_p7dg6h.png'
-        },
-        // {
-        //     id: 5,
-        //     type: "resume"
-        // }
+        }
     ]
 }
 
