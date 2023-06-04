@@ -38,7 +38,7 @@ export default function ContactForm() {
         emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, data, process.env.REACT_APP_PUBLIC_KEY)
         .then((res) => {
             setWasSubmitted(true);
-            console.log('SUCCESS!', res.status, res.text)
+            // console.log('SUCCESS!', res.status, res.text)
             if(res.status === 200) {
                 setIsSuccessful(true);
             }
@@ -46,7 +46,7 @@ export default function ContactForm() {
         .catch(err => {
             setWasSubmitted(true);
             setIsSuccessful(false);
-            console.log('FAILED...', err)
+            // console.log('FAILED...', err)
         });
     };
 

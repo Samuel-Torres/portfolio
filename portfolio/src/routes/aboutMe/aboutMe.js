@@ -3,7 +3,6 @@ import './aboutMe.scss';
 
 export const AboutMe = (props) => {
     const data = props.data
-    console.log("DATA: ", data);
     return (
         <div className="aboutMe-Container">
             <div className="bioContainer">
@@ -17,7 +16,7 @@ export const AboutMe = (props) => {
                     <h1 className="aboutMe">SKILLS</h1>
                     <div className="img-Conatainer">
                         {data.techStackImgs.map(img => {
-                            return <img className="skillsImg" src={img.imgUrl} alt="iushiueqr" /> 
+                            return <img key={img.id} className="skillsImg" src={img.imgUrl} alt="iushiueqr" /> 
                         })}
                     </div>
                 </div>

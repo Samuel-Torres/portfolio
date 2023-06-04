@@ -9,7 +9,7 @@ export const Navbar = (props) => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-        return navigate("/about")
+        navigate("/about-me")
     }
 
     return (
