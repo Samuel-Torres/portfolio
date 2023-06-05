@@ -9,7 +9,7 @@ import WorkHistory from './routes/workHistory/WorkHistory';
 import Contact from './routes/contact/Contact';
 
 // components:
-import Navbar from './components/navBar/navBar';
+import Navbar from './components/navBar/NavBar';
 
 // Nav Bar data:
 import { navBarData } from './data/navBar';
