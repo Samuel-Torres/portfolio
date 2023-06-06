@@ -8,7 +8,7 @@ export const AboutMe = (props) => {
             <div className="bioContainer">
                 <h1 className="aboutMe">ABOUT ME</h1>
                     {!data ? <p>Loading...</p> :                  
-                            <p>{data.bio}</p>
+                            <p className="aboutMeText">{data.bio}</p>
                     }
             </div>
             {!data ? <p>Loading...</p> :                  

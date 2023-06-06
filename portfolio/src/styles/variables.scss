@@ -8,6 +8,7 @@ $warning: #db9225;
 $danger: #FF5733;
 
 // Media Queries:
-$miniAndUp: 300px;
-$mobileAndUp: 400px;
-$tabletAndUp: 850px;
+$mobileMin: 0px;
+$mobileMax: 699px;
+$tabletMin: 700px;
+$tabletMax: 1099px;

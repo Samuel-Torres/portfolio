@@ -1,4 +1,5 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
 .container {
     height: 100px;
@@ -13,7 +14,7 @@
     }
 
     .logoImg {
-        width: 28%;
+        width: 15%;
         z-index: 1000;
         @include animationInit();
     }
@@ -26,5 +27,36 @@
         width: 60%;
         display: flex;
         flex-direction: row;
+    }
+}
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .container {
+        .logoContainer {
+            width: 30%;
+        }
+        .logoImg {
+            width: 40%;
+        }
+    }
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .container {
+        flex-direction: column;
+        
+        .logoContainer {
+            width: 100%;
+            justify-content: center;
+        } 
+        .logoImg {
+            width: 30%;
+        }
+        .iconContainer {
+            width: 100%;
+            margin-top: .5rem;
+        } 
     }
 }
