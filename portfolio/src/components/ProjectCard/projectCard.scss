@@ -2,38 +2,45 @@
 @import '../../styles/mixins.scss';
 
 .projectCardContainer {
+    display: flex;
+    flex-direction: column;
     background-color: $light-shade;
     width: 60%;
     height: 80%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
     border-radius: 20px;
     
     
     .projectImg {
+        display: flex;
         margin: 0 auto;
         width: 90%;
-        height: 200px;
-        position: relative;
-        top: -90px;
+        height: 350px;
         border-radius: 20px;
         -webkit-box-shadow: -2px 20px 88px -42px rgba(0,0,0,0.56);
         -moz-box-shadow: -2px 20px 88px -42px rgba(0,0,0,0.56);
         box-shadow: -2px 20px 88px -42px rgba(0,0,0,0.56);
+        border: 2px solid red;
     }
     .projectCardDescContainer {
         padding: 10px;
-        position: relative;
-        top: -80px;
         word-wrap: break-word;
+        overflow: auto;
+        border: 2px solid green;
     }
     .projectBtnContainer {
         display: flex;
         justify-content: space-around;
-        position: relative;
-        top: -70px;
+    }
+    .projectBtnContainer button {
+        margin-top: 1rem;
+        all: unset;
+        padding: 1rem 1rem;
+        width: 100px;
+        text-align: center;
+        font-size: medium;
+        border: 2px solid black;
     }
     .githubBtn {
         transition: all 0.1s ease-in-out;
@@ -57,4 +64,30 @@
 .projectCardContainer p {
     color: black;
     text-align: left;
+    padding: 0rem 3rem;
+    font-size: 1rem;
+}
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .projectCardContainer {
+        width: 80%;
+        .projectBtnContainer button {
+            width: 70px;
+        }
+    }
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .projectCardContainer {
+        width: 80%;
+        margin-top: 80px;
+        .projectBtnContainer button {
+            width: 70px;
+        }
+    }
+    .projectCardContainer p {
+        padding: 0rem 2rem;
+    }
 }

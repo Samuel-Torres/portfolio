@@ -35,3 +35,25 @@
         color: white;
     }
 }
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .navBarIconContainer {
+        .tabImg {
+            width: 45%;
+        }
+    }
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .navBarIconContainer {
+        flex-wrap: wrap;
+
+        .navIconContainer {
+            width: 25%;
+            min-width: 80px;
+            max-height: 54px;
+        }
+    }
+}
