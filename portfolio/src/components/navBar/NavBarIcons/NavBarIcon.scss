@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.navBarIconContainer {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .navIconContainer {
+        width: 15%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .tabImg {
+        width: 25%;
+        margin-bottom: 5px;
+    }
+
+    .iconItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .iconItem:hover {
+        transition-timing-function: ease-in;
+        transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transform: translateY(-3px);
+        opacity: 1;
+        cursor: pointer;
+    }
+    .tabAClass {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .navBarIconContainer {
+        .tabImg {
+            width: 45%;
+        }
+    }
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .navBarIconContainer {
+        flex-wrap: wrap;
+
+        .navIconContainer {
+            width: 25%;
+            min-width: 80px;
+            max-height: 54px;
+        }
+    }
+}
