@@ -56,7 +56,7 @@
         border: 4px solid $light-shade;
     }
     .error {
-        color: $danger;
+        color: $dark-shade;
     }
     .disabled-btn {
         opacity: .5;
@@ -69,5 +69,43 @@
         transition-timing-function: ease-in;
         transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         transform: translateY(-3px);
+    }
+}
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .formContainer {
+        padding: 1rem 2rem;
+        .textAreaInput {
+            all: unset; 
+            margin-bottom: 2rem;
+            height: 10rem;
+            font-size: 1.2rem;
+            resize: none;
+            overflow-wrap: break-word;
+            background-color: $light-shade;
+            @include border-gradient(2px);
+            padding: 0;
+        }
+    }
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .formContainer {
+        margin-top: 175px;
+        padding: 1rem 1rem;
+        width: 75%;
+        .textAreaInput {
+            all: unset; 
+            margin-bottom: 2rem;
+            height: 10rem;
+            font-size: 1.2rem;
+            resize: none;
+            overflow-wrap: break-word;
+            background-color: $light-shade;
+            @include border-gradient(2px);
+            padding: 0;
+        }
     }
 }

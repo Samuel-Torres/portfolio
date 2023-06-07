@@ -5,9 +5,9 @@
     width: 80%;
     margin: 0 auto;
     padding: 25px 0px 0px 0px;
-}
-
-.border-gradient {
+  }
+  
+  .border-gradient {
     border: 10px solid;
     border-image-slice: 1;
     border-width: 5px;
@@ -44,4 +44,14 @@
   .only-bottom {
     border-left: 0;
     border-top: 0;
+  }
+  
+  // Mobile: 
+  @media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .app_container {
+      height: 100vh;   
+    }
+    .border-gradientTwo {
+      display: none;
+    }
   }

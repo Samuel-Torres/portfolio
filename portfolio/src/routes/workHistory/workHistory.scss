@@ -3,9 +3,10 @@
 .workHistoryPageContainer {
     display: flex;
     @include pageTransition(1s);
-
+    padding: 20px;
     
     .workHistoryContainer {
+        padding: 10px;
         width: 70%;
         height: calc(100vh - 190px);
         display: flex;
@@ -53,5 +54,37 @@
 
     .pageNavContainer h2 {
         margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+   
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .workHistoryPageContainer {
+        flex-direction: column-reverse;
+        padding: 0px;
+        height: 1000px;
+        margin-top: 40%;
+        border: 2px solid green;
+        .workHistoryContainer {
+            margin: auto;
+            padding: 0px;
+            width: 90%;
+            height: 500px;
+            border: 2px solid yellow;
+            justify-content: flex-start;
+        }
+        .bulletPoint {
+            font-size: 16px;
+        }
+        .pageNavContainer {
+            border: 2px solid red;
+            margin-bottom: 10px;
+        }
     }
 }
