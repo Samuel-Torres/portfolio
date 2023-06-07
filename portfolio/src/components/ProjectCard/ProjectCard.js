@@ -8,11 +8,13 @@ const ProjectCard = (props) => {
         <>
             {!data ? null : 
                 <div className="projectCardContainer">
-                    <img 
-                        className='projectImg' 
-                        src={data.projectImgUrl} 
-                        alt={data.imgAlt} 
-                    />
+                    <div className="projectCardImgContainer">
+                        <img 
+                            className='projectImg' 
+                            src={data.projectImgUrl} 
+                            alt={data.imgAlt} 
+                        />
+                    </div>
                     <div className="projectCardDescContainer">
                         <p>{data.projectDescription}</p>
                     </div>
