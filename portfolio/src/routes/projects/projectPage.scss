@@ -37,3 +37,60 @@
         margin-bottom: 30px;
     }
 }
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .projectPageContainer {
+        flex-direction: column-reverse;
+        .projectContainer {
+            border: 2px solid yellow;
+            height: calc(100vh - 300px);
+            width: 100%;
+        }
+        .pageNavContainer {
+            border: 2px solid red;
+            align-items: normal;
+            justify-content: normal;
+            height: calc(100px - 0px);
+            width: 100%;
+        }
+        .pageNavWrapper {
+            border: 2px solid yellow;
+            margin: 0px;
+        }
+    }
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .projectPageContainer {
+        flex-direction: column-reverse;
+        margin-top: 160px;
+        border: 2px solid blue;
+        .projectContainer {
+            border: 2px solid yellow;
+            height: calc(80vh - 230px);
+            width: 100%;
+            justify-content: flex-start;
+            padding: 0px;
+        }
+        .projectCardParentContainer {
+            padding-top: 0px;
+        }
+        .projectNameHeader {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .pageNavContainer {
+            border: 2px solid red;
+            align-items: normal;
+            justify-content: normal;
+            height: calc(100px - 0px);
+            width: 100%;
+        }
+        .pageNavWrapper {
+            border: 2px solid yellow;
+            margin: 0px;
+        }
+    }
+}

@@ -25,7 +25,7 @@ export const ProjectPage = (props) => {
                         <div className="projectCardParentContainer">
                             <ProjectCard data={currentProject} />
                         </div>
-                        <h1>{currentProject.name}</h1>
+                        <h1 className="projectNameHeader">{currentProject.name}</h1>
                     </div>
                     <div className="pageNavContainer">
                         <div className="pageNavWrapper">

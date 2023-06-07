@@ -16,18 +16,20 @@
     height: 30%;
     margin-left: 7%;
     margin-top: 1%;
-}
-.border-gradientTwo {
-      border: 10px solid;
-      border-image-slice: 1;
-      border-width: 5px;
-      width: 20%;
-      position: absolute;
-      height: 30%;
-      margin-left: 7%;
-      margin-top: 1%;
-      bottom: 3%;
-      right: 7%;
+    z-index: -1000;
+  }
+  .border-gradientTwo {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    width: 20%;
+    position: absolute;
+    height: 30%;
+    margin-left: 7%;
+    margin-top: 1%;
+    bottom: 3%;
+    right: 7%;
+    z-index: -1000;
   }
   .border-gradient-green-top {
     border-image-source: linear-gradient(to left, $dark-shade, $light-shade);
