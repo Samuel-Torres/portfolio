@@ -24,7 +24,7 @@
     .bioContainer p {
         color: white;
         line-height: 1.5;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     
     .skills-Container {
@@ -63,6 +63,9 @@
         margin-top: 4.5rem;
         .bioContainer {
             margin-top: 1.5rem;
+        }
+        .bioContainer p { 
+            font-size: 1rem;
         }
         .skills-Container {
             margin-top: .5rem;

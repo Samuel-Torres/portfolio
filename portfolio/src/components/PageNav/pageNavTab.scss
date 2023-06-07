@@ -1,7 +1,11 @@
+@import "../../styles/variables.scss";
+// @import "../../styles/variables.scss";
+
 .name {
     margin-bottom: 10px;
     transition: all 0.1s ease-in-out;
     opacity: 0.5;
+    font-size: 1.4rem;
 }
 .name:hover {
     transition-timing-function: ease-in;
@@ -9,4 +13,14 @@
     transform: translateY(-3px);
     opacity: 1;
     cursor: pointer;
+}
+
+// Tablet:
+@media only screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+   
+}
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    
 }
