@@ -3,10 +3,10 @@ import './App.scss';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // route components:
-import AboutMe from './routes/aboutMe/aboutMe';
-import ProjectPage from './routes/projects/projectPage';
-import WorkHistory from './routes/workHistory/workHistory';
-import Contact from './routes/contact/contact';
+import AboutMe from './routes/aboutMe/AboutMe';
+import ProjectPage from './routes/projects/ProjectPage';
+import WorkHistory from './routes/workHistory/WorkHistory';
+import Contact from './routes/contact/Contact';
 
 // components:
 import Navbar from './components/navBar/NavBar';
