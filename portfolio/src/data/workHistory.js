@@ -20,35 +20,26 @@ export const workHistory = [
     },
     {
         id: 1,
-        dateRange: "June 2019 - May 2020",
+        dateRange: "April 2021 - June 2021",
         name: "Lambda School",
         img: "https://res.cloudinary.com/dvz91qyth/image/upload/v1685740225/portfolio/work%20history/lambda-school-logo_gqssdv.webp",
         bulletPoints: [
             {
                 id: 0,
-                point: "Held oversight of a team of 11 students representing a $330k max revenue potential for Lambda School."
+                point: "Communicated team progress to stakeholders and managed resources."
             },
             {
                 id: 1,
-                point: "Provided daily feedback and issue resolution of all curriculum through slack help channel or code review."
+                point: "Worked with the Product Leadership Team to report on project status and escalate issues as needed."
             },
             {
                 id: 2,
-                point: "Support instructors by answering student questions and providing resources for detailed solutions."
-            },
-            {
-                id: 3,
-                point: "Deliver one-on-one feedback and code review for projects on a weekly basis."
-            },
-            {
-                id: 4,
-                point: "Mentored students on how to learn effectively and solve programming problems."
+                point: "Trained and mentored TPLs and students."
             }
         ],
-        jobTitle: "Team Lead",
+        jobTitle: "Associate Project Lead",
         location: "Remote",
-        type: "work-history" 
-       
+        type: "work-history"    
     },
     {
         id: 2,
@@ -79,25 +70,34 @@ export const workHistory = [
     },
     {
         id: 3,
-        dateRange: "April 2021 - June 2021",
+        dateRange: "June 2019 - May 2020",
         name: "Lambda School",
         img: "https://res.cloudinary.com/dvz91qyth/image/upload/v1685740225/portfolio/work%20history/lambda-school-logo_gqssdv.webp",
         bulletPoints: [
             {
                 id: 0,
-                point: "Communicated team progress to stakeholders and managed resources."
+                point: "Held oversight of a team of 11 students representing a $330k max revenue potential for Lambda School."
             },
             {
                 id: 1,
-                point: "Worked with the Product Leadership Team to report on project status and escalate issues as needed."
+                point: "Provided daily feedback and issue resolution of all curriculum through slack help channel or code review."
             },
             {
                 id: 2,
-                point: "Trained and mentored TPLs and students."
+                point: "Support instructors by answering student questions and providing resources for detailed solutions."
+            },
+            {
+                id: 3,
+                point: "Deliver one-on-one feedback and code review for projects on a weekly basis."
+            },
+            {
+                id: 4,
+                point: "Mentored students on how to learn effectively and solve programming problems."
             }
         ],
-        jobTitle: "Associate Project Lead",
+        jobTitle: "Team Lead",
         location: "Remote",
-        type: "work-history"    
+        type: "work-history" 
+       
     },
 ]
