@@ -8,3 +8,10 @@
     height: calc(100vh - 155px);
     @include pageTransition(1s);
 }
+
+// Mobile: 
+@media only screen and (min-width: $mobileMin) and (max-width: $mobileMax) {
+    .contact-page-container {
+        margin: 180px 0 0 0;
+    }
+}
