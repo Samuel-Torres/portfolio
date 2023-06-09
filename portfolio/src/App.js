@@ -26,7 +26,7 @@ function App() {
           <BrowserRouter>
           <Navbar navDataProps={navBarData} />
             <Routes>
-              <Route path="/" element={<AboutMe data={aboutMe} />} />
+              <Route exact path="/" element={<AboutMe data={aboutMe} />} />
               <Route path="/about-me" element={<AboutMe data={aboutMe} />} />
               <Route path="/projects/:id" element={<ProjectPage data={projects}/>} />
               <Route path="/work-history/:id" element={<WorkHistory data={workHistory}/>} />
