@@ -7,6 +7,7 @@ import AboutMe from './routes/aboutMe/AboutMe';
 import ProjectPage from './routes/projects/ProjectPage';
 import WorkHistory from './routes/workHistory/WorkHistory';
 import Contact from './routes/contact/Contact';
+import NotFound from './routes/notFound/NotFound';
 
 // components:
 import Navbar from './components/navBar/NavBar';
@@ -31,6 +32,7 @@ function App() {
               <Route path="/projects/:id" element={<ProjectPage data={projects}/>} />
               <Route path="/work-history/:id" element={<WorkHistory data={workHistory}/>} />
               <Route path="/contact" element={<Contact />} />
+              <Route path='*' element={<NotFound />}/>
             </Routes>
           </BrowserRouter>
         </div>
