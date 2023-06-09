@@ -1,24 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './NavBarIcon.scss';
 
 export const NavBarIcon = (props) => {
     const tabData = props.tab
-    const navigate = useNavigate();
-
-    const handleTabClick = (path) => {
-        const newPath = path.toLowerCase();
-        if (newPath === "/about-me" || newPath === "/contact") return navigate(newPath);
-        else navigate(`${newPath}/0`);
-    }
 
     return (
         <div className="navIconContainer">
             {tabData.tabType === "pageUrl" ? 
-                <div className="iconItem" onClick={() => handleTabClick(tabData.path)}>
+                <Link to={tabData.path === '/projects' || tabData.path === '/work-history' ? `${tabData.path}/0` : `${tabData.path}`}>
                     <img className="tabImg" src={tabData.imgIcon} alt={tabData.alt} />
                     <p>{tabData.tabText}</p>
-                </div> 
+                </Link>
             : null}
 
             {tabData.tabType === "externalLink" ? 
