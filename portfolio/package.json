@@ -47,6 +47,5 @@
   "devDependencies": {
     "styled-components": "^5.3.10"
   },
-  "proxy": "http://localhost:3000",
-  "homepage": "."
+  "proxy": "http://localhost:3000"
 }
